@@ -1,0 +1,37 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\rw3iss\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.5\\cores\\arduino"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\rw3iss\\AppData\\Local\\Arduino15\\packages\\arduino\\hardware\\avr\\1.8.5\\variants\\mega"
+  },
+  {
+    "Sourcefile": "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\roaster\\build\\sketch\\roaster.ino.cpp",
+    "Include": "TFT_HX8357.h",
+    "Includepath": "C:\\Users\\rw3iss\\Documents\\Arduino\\libraries\\TFT_HX8357-master"
+  },
+  {
+    "Sourcefile": "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\roaster\\build\\sketch\\roaster.ino.cpp",
+    "Include": "max6675.h",
+    "Includepath": "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\roaster\\lib\\MAX6675"
+  },
+  {
+    "Sourcefile": "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\roaster\\build\\sketch\\roaster.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\rw3iss\\Documents\\Arduino\\libraries\\TFT_HX8357-master\\TFT_HX8357.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\roaster\\lib\\MAX6675\\max6675.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
