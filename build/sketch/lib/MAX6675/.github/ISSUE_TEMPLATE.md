@@ -1,4 +1,4 @@
-#line 1 "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\roaster\\lib\\MAX6675\\.github\\ISSUE_TEMPLATE.md"
+#line 1 "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\Roaster\\lib\\MAX6675\\.github\\ISSUE_TEMPLATE.md"
 Thank you for opening an issue on an Adafruit Arduino library repository.  To
 improve the speed of resolution please review the following guidelines and
 common troubleshooting steps below before creating the issue:

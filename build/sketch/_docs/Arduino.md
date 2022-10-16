@@ -1,9 +1,27 @@
-#line 1 "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\roaster\\_docs\\Arduino.md"
+#line 1 "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\Roaster\\_docs\\Arduino.md"
 Arduino
 
 # Arduino CLI:
-build:
-~/.bin/arduino-cli.exe compile -b arduino:avr:mega .
+
+## Init:
+arduino-cli.exe config init
+
+## Compile:
+acli compile -b arduino:avr:mega ./roaster.ino --build-path ./build --libraries "./lib/OneButton,C:\bin\arduino\libraries,./src" --library "./"
+
+## Upload:
+acli upload -p COM5 -b arduino:avr:mega -i build/roaster.ino.hex .
+
+## Install library:
+arduino-cli lib install FTDebouncer
+
+## Board info:
+acli board details -b arduino:avr:mega
+
+## Debug:
+arduino-cli daemon --debug
+
+
 
 
 # Platform IO Arduino framework:
@@ -120,3 +138,57 @@ delay(8);
 }
 delay(800);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# VS Code tasks to build and upload with Mega:
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Arduino Compile",
+            "type": "shell",
+            "command": "C:/Users/rw3iss/.bin/arduino-cli.exe compile -b arduino:avr:mega ./Roaster.ino --build-path ./build --libraries \".\\lib\\OneButton,C:\\bin\\arduino\\libraries,.\\src\" --library \".\"",
+            "group": "build",
+            "isBackground": false,
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Arduino Upload",
+            "type": "shell",
+            "command": "C:/Users/rw3iss/.bin/arduino-cli.exe upload -p COM5 -v --fqbn arduino:avr:mega -i \".\\build\\Roaster.ino.hex\" .",
+            "group": "test",
+            "isBackground": false,
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
+
+

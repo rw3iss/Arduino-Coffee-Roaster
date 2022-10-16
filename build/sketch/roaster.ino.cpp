@@ -1,20 +1,19 @@
+#line 1 "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\Roaster\\Roaster.ino"
 #include <Arduino.h>
-#line 1 "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\roaster\\roaster.ino"
-#include "./app/App.h";
+#include <stdlib.h>
+#include "./src/App.h"
 
 App app;
 
-#line 5 "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\roaster\\roaster.ino"
+#line 7 "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\Roaster\\Roaster.ino"
 void setup();
-#line 10 "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\roaster\\roaster.ino"
+#line 11 "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\Roaster\\Roaster.ino"
 void loop();
-#line 5 "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\roaster\\roaster.ino"
+#line 7 "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\Roaster\\Roaster.ino"
 void setup() {
-    app = App();
     app.setup();
 }
 
 void loop() {
     app.loop();
 }
-

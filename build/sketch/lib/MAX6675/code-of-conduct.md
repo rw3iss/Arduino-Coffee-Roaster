@@ -1,4 +1,4 @@
-#line 1 "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\roaster\\lib\\MAX6675\\code-of-conduct.md"
+#line 1 "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\Roaster\\lib\\MAX6675\\code-of-conduct.md"
 # Adafruit Community Code of Conduct
 
 ## Our Pledge

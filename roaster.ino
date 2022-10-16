@@ -1,9 +1,10 @@
-#include "./app/App.h";
+#include <Arduino.h>
+#include <stdlib.h>
+#include "./src/App.h"
 
 App app;
 
 void setup() {
-    app = App();
     app.setup();
 }
 

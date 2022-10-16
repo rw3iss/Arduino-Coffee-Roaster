@@ -1,4 +1,4 @@
-#line 1 "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\roaster\\lib\\MAX6675\\.github\\PULL_REQUEST_TEMPLATE.md"
+#line 1 "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\Roaster\\lib\\MAX6675\\.github\\PULL_REQUEST_TEMPLATE.md"
 Thank you for creating a pull request to contribute to Adafruit's GitHub code!
 Before you open the request please review the following guidelines and tips to
 help it be more easily integrated:

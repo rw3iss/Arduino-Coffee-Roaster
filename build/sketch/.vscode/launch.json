@@ -1,0 +1,66 @@
+#line 1 "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\Roaster\\.vscode\\launch.json"
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Arduino",
+            "type": "arduino",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${workspaceFolder}",
+            "MIMode": "gdb",
+            "targetArchitecture": "arm",
+            "miDebuggerPath": "",
+            "debugServerPath": "",
+            "debugServerArgs": "",
+            "customLaunchSetupCommands": [
+                {
+                    "text": "target remote localhost:3333"
+                },
+                {
+                    "text": "file \"${file}\""
+                },
+                {
+                    "text": "load"
+                },
+                {
+                    "text": "monitor reset halt"
+                },
+                {
+                    "text": "monitor reset init"
+                }
+            ],
+            "stopAtEntry": true,
+            "serverStarted": "Info\\ :\\ [\\w\\d\\.]*:\\ hardware",
+            "launchCompleteCommand": "exec-continue",
+            "filterStderr": true,
+            "args": []
+        },
+        {
+            "name": "C/C++: avrdude.exe build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": ["-p arduino:avr:mega -P COM5"],
+            "stopAtEntry": false,
+            "cwd": "C:/Users/rw3iss/AppData/Local/Arduino15/packages/arduino/tools/avrdude/6.3.0-arduino17/bin",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:\\Users\\rw3iss\\AppData\\Local\\Arduino15\\packages\\arduino\\tools\\avrdude\\6.3.0-arduino17\\bin\\gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: avrdude.exe build active file"
+        }
+    ]
+}
