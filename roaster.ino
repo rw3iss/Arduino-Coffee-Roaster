@@ -1,11 +1,19 @@
-#include <Arduino.h>
-#include <stdlib.h>
-#include "./src/App.h"
+#include <ArduinoSTL.h>
+
+#include "RoasterApp.h"
+
+using namespace std;
 
 App app;
 
+typedef int (*CallbackType)(float);
+
 void setup() {
-    app.setup();
+    app = RoasterApp();
+    app.setup([]() -> void {
+        printf("App setup complete, starting...");
+        app.start();
+    });
 }
 
 void loop() {

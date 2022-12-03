@@ -1,4 +1,4 @@
-#line 1 "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\Roaster\\_docs\\Arduino.md"
+#line 1 "/Users/rw3iss/Documents/Arduino/Projects/Roaster/_docs/Arduino.md"
 Arduino
 
 # Arduino CLI:
@@ -42,9 +42,12 @@ https://lastminuteengineers.com/rotary-encoder-arduino-tutorial/
 
 --------------------------------------------------------------------------------
 
+# Using Analog Inputs:
+https://www.arduino.cc/en/Tutorial/BuiltInExamples/AnalogInput
+
 
 # Relay:
-https://www.circuitbasics.com/setting-up-a-5v-relay-on-the-arduino/
+https://www.circuitbasics.com/setting-up-a-5v-relay-on-the-arduino/ 
 
 
 # Thermocouples:

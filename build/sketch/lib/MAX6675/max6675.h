@@ -1,4 +1,4 @@
-#line 1 "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\Roaster\\lib\\MAX6675\\max6675.h"
+#line 1 "/Users/rw3iss/Documents/Arduino/Projects/Roaster/lib/MAX6675/max6675.h"
 // this library is public domain. enjoy!
 // https://learn.adafruit.com/thermocouple/
 

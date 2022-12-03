@@ -1,0 +1,35 @@
+#pragma once
+
+#include <ArduinoSTL.h>
+#include <SoftwareSerial.h>
+
+SoftwareSerial mySerial(0, 1);
+
+namespace std {
+ohserialstream cout(mySerial);
+ihserialstream cin(mySerial);
+}  // namespace std
+
+/**
+ * Logger - A logger instance that can be passed around the app, which will output to the Serial output.
+ */
+class Logger {
+   public:
+    Logger();
+    ~Logger();
+    setup();
+
+   private:
+};
+
+Logger::Logger() {
+}
+
+void Logger::setup() {
+    mySerial.begin(9600);
+    ArduinoSTL_Serial.connect(mySerial);
+    cout << "Logger is setup." << endl;
+}
+
+Logger::~Logger() {
+}

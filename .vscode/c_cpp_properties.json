@@ -4,7 +4,17 @@
             "name": "Win32",
             "includePath": [
                 "${workspaceFolder}/**",
-                "C:/bin/arduino/libraries/"
+                "${workspaceFolder}/lib/**",
+                "${workspaceFolder}/src/**",
+                "${workspaceFolder}/src/lib/**",
+                "${workspaceFolder}/src/lib/app/**",
+                "/Users/rw3iss/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/libraries/**",
+                "/Users/rw3iss/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino",
+                "/Users/rw3iss/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/variants/mega",
+                "/Users/rw3iss/Library/Arduino15/packages/arduino/tools/avr-gcc/7.3.0-atmel3.6.1-arduino7/avr/include",
+                "/Users/rw3iss/Documents/Arduino/libraries/TFT_HX8357",
+                //"/Users/rw3iss/Documents/Arduino/libraries/StandardCplusplus-master",
+                "/Users/rw3iss/Documents/Arduino/libraries/ArduinoSTL-master/src"
             ],
             "defines": [
                 "_DEBUG",
@@ -15,7 +25,7 @@
                 "ARDUINO_AVR_UNO",
                 "ARDUINO_ARCH_AVR"
             ],
-            "compilerPath": "C:/Users/rw3iss/AppData/Local/Arduino15/packages/arduino/tools/avrdude/6.3.0-arduino17/bin/avrdude.exe",
+            "compilerPath": "/Users/rw3iss/Library/Arduino15/packages/arduino/tools/avrdude/6.3.0-arduino17/bin/avrdude",
             "cStandard": "c11",
             "cppStandard": "c++17",
             "intelliSenseMode": "clang-x64",

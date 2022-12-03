@@ -1,17 +1,26 @@
-#line 1 "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\Roaster\\Roaster.ino"
 #include <Arduino.h>
-#include <stdlib.h>
-#include "./src/App.h"
+#line 1 "/Users/rw3iss/Documents/Arduino/Projects/Roaster/Roaster.ino"
+#include <ArduinoSTL.h>
+
+#include "RoasterApp.h"
+
+using namespace std;
 
 App app;
 
-#line 7 "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\Roaster\\Roaster.ino"
+typedef int (*CallbackType)(float);
+
+#line 11 "/Users/rw3iss/Documents/Arduino/Projects/Roaster/Roaster.ino"
 void setup();
-#line 11 "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\Roaster\\Roaster.ino"
+#line 19 "/Users/rw3iss/Documents/Arduino/Projects/Roaster/Roaster.ino"
 void loop();
-#line 7 "C:\\Users\\rw3iss\\Documents\\Arduino\\Projects\\Roaster\\Roaster.ino"
+#line 11 "/Users/rw3iss/Documents/Arduino/Projects/Roaster/Roaster.ino"
 void setup() {
-    app.setup();
+    app = RoasterApp();
+    app.setup([]() -> void {
+        printf("App setup complete, starting...");
+        app.start();
+    });
 }
 
 void loop() {

@@ -1,0 +1,1 @@
+arduino-cli upload -p /dev/cu.usbmodem13301 -b arduino:avr:mega -i build/Roaster.ino.hex .

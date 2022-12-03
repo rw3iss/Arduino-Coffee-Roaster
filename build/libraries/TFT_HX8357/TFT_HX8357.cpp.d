@@ -1,0 +1,28 @@
+/Users/rw3iss/Documents/Arduino/Projects/Roaster/build/libraries/TFT_HX8357/TFT_HX8357.cpp.o: \
+ /Users/rw3iss/Documents/Arduino/libraries/TFT_HX8357/TFT_HX8357.cpp \
+ /Users/rw3iss/Documents/Arduino/libraries/TFT_HX8357/TFT_HX8357.h \
+ /Users/rw3iss/Documents/Arduino/libraries/TFT_HX8357/User_Setup.h \
+ /Users/rw3iss/Documents/Arduino/libraries/TFT_HX8357/Fonts/glcdfont.c \
+ /Users/rw3iss/Documents/Arduino/libraries/TFT_HX8357/Fonts/Font16.h \
+ /Users/rw3iss/Documents/Arduino/libraries/TFT_HX8357/Fonts/Font16.c \
+ /Users/rw3iss/Documents/Arduino/libraries/TFT_HX8357/Fonts/Font32rle.h \
+ /Users/rw3iss/Documents/Arduino/libraries/TFT_HX8357/Fonts/Font32rle.c \
+ /Users/rw3iss/Documents/Arduino/libraries/TFT_HX8357/Fonts/Font64rle.h \
+ /Users/rw3iss/Documents/Arduino/libraries/TFT_HX8357/Fonts/Font64rle.c \
+ /Users/rw3iss/Documents/Arduino/libraries/TFT_HX8357/Fonts/Font7srle.h \
+ /Users/rw3iss/Documents/Arduino/libraries/TFT_HX8357/Fonts/Font7srle.c \
+ /Users/rw3iss/Documents/Arduino/libraries/TFT_HX8357/Fonts/Font72rle.h \
+ /Users/rw3iss/Documents/Arduino/libraries/TFT_HX8357/Fonts/Font72rle.c \
+ /Users/rw3iss/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/Arduino.h \
+ /Users/rw3iss/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/binary.h \
+ /Users/rw3iss/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/WCharacter.h \
+ /Users/rw3iss/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/WString.h \
+ /Users/rw3iss/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/HardwareSerial.h \
+ /Users/rw3iss/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/Stream.h \
+ /Users/rw3iss/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/Print.h \
+ /Users/rw3iss/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/Printable.h \
+ /Users/rw3iss/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/USBAPI.h \
+ /Users/rw3iss/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/Arduino.h \
+ /Users/rw3iss/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/variants/mega/pins_arduino.h \
+ /Users/rw3iss/Library/Arduino15/packages/arduino/hardware/avr/1.8.6/cores/arduino/Print.h \
+ /Users/rw3iss/Documents/Arduino/libraries/TFT_HX8357/Fonts/GFXFF/gfxfont.h
