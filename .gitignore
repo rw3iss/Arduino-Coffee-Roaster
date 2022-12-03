@@ -1,0 +1,7 @@
+# lib/
+
+.cache/
+build/
+
+backup/
+
