@@ -24,13 +24,12 @@
 #ifndef OneButton_h
 #define OneButton_h
 
-#include "Arduino.h"
 
 // ----- Callback function types -----
 
 extern "C" {
-typedef void (*callbackFunction)(void);
-typedef void (*parameterizedCallbackFunction)(void *);
+    typedef void (*callbackFunction)(void);
+    typedef void (*parameterizedCallbackFunction)(void *);
 }
 
 

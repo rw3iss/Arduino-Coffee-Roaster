@@ -1,1 +1,0 @@
-arduino-cli compile -b arduino:avr:mega Roaster.ino --build-path ./build --libraries "./lib/OneButton,./lib/MAX6675,MAX6675,/Users/rw3iss/Documents/Arduino/libraries/ArduinoSTL-master/src" --library "./src,./src/lib/,./src/app,./src/lib/app" --library "./src/lib" --library "./src/lib/controls"

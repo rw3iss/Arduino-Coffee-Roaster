@@ -1,0 +1,1 @@
+arduino-cli monitor -p /dev/tty.usbmodem13301 -b arduino:avr:mega

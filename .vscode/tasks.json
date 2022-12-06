@@ -2,9 +2,25 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Arduino Compile",
+            "label": "Arduino - Build and Upload",
             "type": "shell",
-            "command": "arduino-cli compile -b arduino:avr:mega ./Roaster.ino --build-path ./build --libraries \".\\lib\\OneButton,C:\\bin\\arduino\\libraries,.\\src\" --library \".\"",
+            "command": "./build-upload.sh",
+            "group": "test",
+            "isBackground": false,
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Arduino - Build",
+            "type": "shell",
+            "command": "arduino-cli compile -b arduino:avr:mega app --build-path ./build --library \"./app\" --library \"./app/src\" --library \"./app/lib\" --library \"./app/lib/app\" --library \"./app/lib/controls\" --library \"./app/lib/utils\"",
+            //"command": "arduino-cli compile -b arduino:avr:mega ./Roaster.ino --build-path ./build --libraries \".\\lib\\OneButton,C:\\bin\\arduino\\libraries,.\\src\" --library \".\"",
             "group": "build",
             "isBackground": false,
             "presentation": {
@@ -19,7 +35,7 @@
         {
             "label": "Arduino Upload",
             "type": "shell",
-            "command": "arduino-cli upload -p COM5 -v --fqbn arduino:avr:mega -i \".\\build\\Roaster.ino.hex\" .",
+            "command": "arduino-cli upload -p /dev/tty.usbmodem13201 -b arduino:avr:mega -i build/app.ino.hex .",
             "group": "test",
             "isBackground": false,
             "presentation": {
