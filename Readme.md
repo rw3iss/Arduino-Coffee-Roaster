@@ -38,8 +38,11 @@ These are the pieces of hardware (ie. features) this application supports:
 arduino-cli
 
 #### Install Arduino libraries:
-`arduino-cli lib install ArduinoSTL`
-`arduino-cli lib install TFT_HX8357`
+```
+arduino-cli lib install ArduinoSTL
+arduino-cli lib install TFT_HX8357
+```
+If you can't install the TFT lib above, install it manually into your global Arduino libraries directory from here: https://github.com/Bodmer/TFT_HX8357
 
 ##### Note about ArduinoSTL (v1.3.3) (as of 11-5-22):
 Using this library is throwing the error:
@@ -51,8 +54,7 @@ arduino-app/build/libraries/ArduinoSTL/new_handler.cpp.o (symbol from plugin):(.
 To get around this, you must comment line ~22 in ArduinoSTL/src/new_handler.cpp:
 `// const std::nothrow_t std::nothrow = { };`
 
-This should allow arduini-cli to compile the program.
-
+This should allow arduino-cli to compile the program.
 
 #### Build the Arduino sketch:
 `./build.sh`
