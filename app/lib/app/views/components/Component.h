@@ -34,15 +34,16 @@ uint16_t Component::addChild(Component* comp) {
 
 // Returns the removed child, otherwise throws an exception.
 Component* Component::removeChild(uint16_t index) {
-    uint16_t size = this->children->size();
-    if (index > size)
-        throw "removeChild() index is greater than children size.";
-
-    // iterate to position and erase
-    uint16_t cPos = 0;
-    vector<Component*>::iterator it = this->children->begin();
-    while (cPos++ < index) it++;
-    return *this->children->erase(it);
+    uint16_t const size = this->children->size();
+    if (index > size) {
+        debug("removeChild() index is greater than children size.");
+    } else {
+        // iterate to position and erase
+        uint16_t cPos = 0;
+        vector<Component*>::iterator it = this->children->begin();
+        while (cPos++ < index) it++;
+        return *this->children->erase(it);
+    }
 }
 
 // Returns the child Component at index, otherwise NULL.

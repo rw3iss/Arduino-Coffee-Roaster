@@ -3,27 +3,24 @@
 #include <Arduino.h>
 #include <vector>
 #include "ViewState.h"
-#include "events/Event.h"
-#include "views/components/Component.h"
+#include "../events/Event.h"
+#include "components/Component.h"
 
 using namespace std;
 
 /**
- * Screen - Base screen.
+ * View - Base view.
  */
 class View : public Component {
     public:
-        View();
-        ~View();
+        View() : Component("View"){};
+        View(string name) : Component(name){};
+        ~View(){};
 
         void handleEvent(Event* event);
 
     private:
         ViewState state;
 };
-
-View::View(){};
-
-View::~View(){};
 
 void View::handleEvent(Event* event){};

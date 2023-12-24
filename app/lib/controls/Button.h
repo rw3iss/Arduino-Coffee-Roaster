@@ -1,16 +1,18 @@
 
 #ifndef Button_h
 #define Button_h
-#include <max6675.h>
 
+//#include <max6675.h>
+#include <Arduino.h>
 #include "OneButton.h"
 
 class Button {
     private:
-        OneButton button;
         int value;
 
     public:
+        OneButton button;
+
         explicit Button(uint8_t pin) : button(pin) {
             button.attachClick(
                 [](void *scope) { ((Button *)scope)->Clicked(); }, this);
@@ -21,17 +23,17 @@ class Button {
         }
 
         void Clicked() {
-            // Serial.println("Click then value++");
+            debug("Click then value++");
             value++;
         }
 
         void DoubleClicked() {
-            // Serial.println("DoubleClick");
+            debug("DoubleClick");
         }
 
         void LongPressed() {
-            // Serial.println("LongPress and the value is");
-            // Serial.println(value);
+            debug("LongPress and the value is");
+            debug(value);
         }
 
         void handle() { button.tick(); }

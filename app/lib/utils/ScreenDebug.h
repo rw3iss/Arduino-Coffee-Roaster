@@ -21,9 +21,7 @@ int yPos = DEBUG_YPOS;
 class ScreenDebug {
     public:
         ScreenDebug(){};
-
         ScreenDebug(Screen *_screen) { screen = _screen; };
-
         ~ScreenDebug(){};
 
         void write(char s[]);

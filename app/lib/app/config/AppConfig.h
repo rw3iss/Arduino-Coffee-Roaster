@@ -2,8 +2,8 @@
 #define AppConfig_h
 
 struct Config {
-        String text = "This is my default text.";
-        int number = 100;
+    String text = "This is my default text.";
+    int number = 100;
 };
 
 int BTN_SCAN_DELAY = 20;  // delay after each loop to scan for new inputs

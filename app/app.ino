@@ -1,8 +1,4 @@
-#include <Arduino.h>
-#include "./src/RoasterApp.h"
-// #include "App.h"
-
-// #include <Arduino.h>
+#include "RoasterApp.h"
 
 RoasterApp app;
 
@@ -11,6 +7,7 @@ void setup() {
     // app = App();
     app.setup();
     app.start();
+
     //  []() -> void {
     //      app.debug("Starting app...");
     //      app.start();
@@ -20,4 +17,6 @@ void setup() {
     delay(1000);
 }
 
-void loop() { app.loop(); }
+void loop() {
+    app.loop();
+}

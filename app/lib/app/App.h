@@ -2,10 +2,14 @@
 
 #include <Arduino.h>
 #include <ArduinoSTL.h>
+#include "IOConfig.h"
+#include "Debug.h"
 // #include <SoftwareSerial.h>
 #include "Screen.h"
 #include "ScreenDebug.h"
 #include "StringUtils.h"
+#include "views/View.h"
+#include "views/ViewRenderer.h"
 #include "views/ViewManager.h"
 
 // SoftwareSerial softSerial(0, 1);
@@ -32,12 +36,11 @@ class App {
         void setup();  // void (*cb)(/* pass config */));
         void start();
         void loop();
-
         void debug(char s[]);
 
-    private:
         bool isStarted = false;
-        Screen *screen;
+        Screen *screen; // TFT sceen interface
+        ViewRenderer *viewRenderer;
         ViewManager *viewManager;
         ScreenDebug *screenDebug;
 };
@@ -50,7 +53,8 @@ App::App() {
 
     screen = new Screen();
     screenDebug = new ScreenDebug(screen);
-    viewManager = new ViewManager();
+    viewRenderer = new ViewRenderer(screen);
+    viewManager = new ViewManager(viewRenderer); // manage current view data/state... updates should send to renderer, which draws to screen
 };
 
 App::~App() {
@@ -75,14 +79,11 @@ void App::setup() {  // void (*cb)(/* pass config? */)) {
 void App::start() {
     debug("App::start()");
     isStarted = true;
-
-    screen->write("Roaster App v1.0", 5, 5, 4);
-    //  Serial.println("App started.");
+    screen->write("App v1.0", 5, 5, 4);
 };
 
 void App::loop() {
     debug("App::loop()");
-    // debug("L.");
     delay(1000);
 
     // if (appLoop % 2 == 0) {
@@ -97,7 +98,7 @@ void App::loop() {
 }
 
 void App::debug(char s[]) {
-    Serial.print("🐞");
+    Serial.print("🐞 ");
     Serial.println(s);
     // softSerial.println(s);
     screenDebug->write(s);

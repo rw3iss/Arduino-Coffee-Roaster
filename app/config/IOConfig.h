@@ -1,7 +1,7 @@
 #ifndef IOConfig_h
 #define IOConfig_h
 
-#include <Arduino.h>
+//#include <Arduino.h>
 
 using namespace std;
 
